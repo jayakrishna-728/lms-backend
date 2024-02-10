@@ -17,7 +17,7 @@ const accountSid = 'ACa2aee1ee0a25157a2477925f62f07bfe';
 const authToken = '1203add9859a041abe1b307c76293856';
 
 // Initialize Twilio client
-const client = twilio(accountSid, authToken);
+const client = twilio(accountSid, authToken); 
 
 // POST endpoint to handle form data
 app.post('/userdata', (req, res) => {
@@ -29,7 +29,7 @@ app.post('/userdata', (req, res) => {
                       `Last Name: ${lastName}\n` +
                       `Phone Number: ${phoneNumber}\n` +
                       `Description: ${description}`;
-                      
+
     // You can perform further actions with the received data, such as saving it to a database
     sendMessage(messageBody);
 
@@ -60,3 +60,6 @@ app.listen(port, () => {
 
 // Optionally, call sendMessage function here to send SMS
 // sendMessage();
+
+
+module.exports = app;
