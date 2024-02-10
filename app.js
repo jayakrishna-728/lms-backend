@@ -4,7 +4,7 @@ const twilio = require('twilio');
 const cors = require('cors');
 
 const app = express();
-const port = process.env.PORT || 4000;
+const port = 4000;
 
 // Use bodyParser middleware to parse JSON requests
 app.use(bodyParser.json());
@@ -18,6 +18,11 @@ const authToken = '1203add9859a041abe1b307c76293856';
 
 // Initialize Twilio client
 const client = twilio(accountSid, authToken); 
+
+
+app.get('/home', (req, res) => {
+  res.status(200).json('Welcome, your app is working well');
+})
 
 // POST endpoint to handle form data
 app.post('/userdata', (req, res) => {
