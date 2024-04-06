@@ -65,13 +65,6 @@ app.listen(port, () => {
 
 // Optionally, call sendMessage function here to send SMS
 
-const messageBody = `New form submission:\n\n` +
-`First Name: n` +
-`Last Name: n` +
-`Phone Number:n` +
-`Description: sd`;
-sendMessage("POOOO");
-
 
 module.exports = app;
 
