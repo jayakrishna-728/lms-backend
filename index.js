@@ -47,8 +47,8 @@ function sendMessage(postData) {
   typeof(postData);
     const message = {
         body: postData,
-        from: '+12058394048',  // Your Twilio phone number
-        to: '+919160178492',   // The recipient's phone number
+        from: 'whatsapp:+14155238886',  // Your Twilio phone number
+        to: 'whatsapp:+919160178492',   // The recipient's phone number
     };
     
 
@@ -67,5 +67,6 @@ app.listen(port, () => {
 
 
 module.exports = app;
+
 
 
