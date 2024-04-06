@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Twilio credentials
-const accountSid = 'ACa2aee1ee0a25157a2477925f62f07bfe';
-const authToken = '82d8ea1a60445104c68a9a8abfd88bcf';
+const accountSid = 'AC0edeae84e74685fde38cef25341646a2';
+const authToken = 'a89b954f0e426d58150b62b4bc091104';
 
 // Initialize Twilio client
 const client = twilio(accountSid, authToken); 
@@ -47,8 +47,8 @@ function sendMessage(postData) {
   typeof(postData);
     const message = {
         body: postData,
-        from: '+19478004831',  // Your Twilio phone number
-        to: '+919502810527',   // The recipient's phone number
+        from: '+12058394048',  // Your Twilio phone number
+        to: '+9160178492',   // The recipient's phone number
     };
     
 
@@ -68,3 +68,5 @@ app.listen(port, () => {
 
 
 module.exports = app;
+
+
