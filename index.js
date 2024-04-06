@@ -48,7 +48,7 @@ function sendMessage(postData) {
     const message = {
         body: postData,
         from: '+12058394048',  // Your Twilio phone number
-        to: '+9160178492',   // The recipient's phone number
+        to: '+919160178492',   // The recipient's phone number
     };
     
 
@@ -64,7 +64,13 @@ app.listen(port, () => {
 });
 
 // Optionally, call sendMessage function here to send SMS
-// sendMessage();
+
+const messageBody = `New form submission:\n\n` +
+`First Name: n` +
+`Last Name: n` +
+`Phone Number:n` +
+`Description: sd`;
+sendMessage("POOOO");
 
 
 module.exports = app;
